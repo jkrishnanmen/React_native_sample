@@ -6,8 +6,8 @@ export default class Logo extends Component {
     return(
       <Image
         source={require('AwesomeProject/resources/backgrounds/logomain.png')}
+        flex = {this.props.flex}
         style={{
-                flex: 1,
                 resizeMode:'contain',
                 width: 200,
                 }}>

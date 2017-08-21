@@ -12,19 +12,20 @@ export default class TextInputLogin extends Component {
   // }
   render() {
     return (
-      <View style = {{
-        flex:1,
+      <View
+       flex = {this.props.flex}
+       style = {{
         flexDirection: 'column',
       }}>
         <TextInput
           style={styles.textInput}
-          placeholder="TextInputLogin "
+          placeholder="MOBILE NUMBER / EMAIL "
           placeholderTextColor = '#fff'
           onChangeText={(text) => this.setState({text})}/>
 
         <TextInput
           style={styles.textInput}
-          placeholder="Type here to translate!"
+          placeholder="PASSWORD"
           placeholderTextColor = '#fff'
           onChangeText={(text) => this.setState({text})}/>
       </View>
@@ -35,11 +36,11 @@ export default class TextInputLogin extends Component {
 const styles = StyleSheet.create({
   textInput: {
     height: 40,
-    width: DEVICE_WIDTH/2,
-    borderRadius: 10,
+    width: DEVICE_WIDTH/1.5,
+    borderRadius: 5,
     borderWidth: 1,
     margin:2,
-    padding:2,
+    padding:10,
     borderColor: '#fff',
   }
 })

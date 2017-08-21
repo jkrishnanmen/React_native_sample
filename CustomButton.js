@@ -12,6 +12,7 @@ export default class CustomButton extends Component {
       }}>
         <Text> button</Text>
         <Button
+          backgroundColor = {this.props.color}
           onPress={() => { Alert.alert('You tapped the button!')}}
           title="Press Me"
         />

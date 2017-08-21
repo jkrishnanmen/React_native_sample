@@ -16,7 +16,7 @@ import ButtonBasics from './ButtonBasics.js'
 import Touchables from './Touchables.js'
 import CustomLayout from './CustomLayout.js'
 // import MentornetzLaunch from './mentornetz_common_modules/MentornetzLaunch.js'
-// import MentornetzHome from './mentornetz_common_modules/MentornetzHome.js'
+import MentornetzHome from './mentornetz_common_modules/MentornetzHome.js'
 import JustifyContentBasics from './JustifyContentBasics.js'
 import BottomBar from './mentornetz_common_modules/BottomBar.js'
 import LoginScreen from './mentornetz_common_modules/LoginScreen.js'
@@ -65,7 +65,7 @@ export default class App extends React.Component {
         // alignItems: 'center'
       }}>
 
-        <LoginScreen/>
+        <MentornetzHome/>
       </View>
 
       // <View style={{

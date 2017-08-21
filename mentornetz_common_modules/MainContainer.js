@@ -1,8 +1,8 @@
 import React , { Component } from 'react';
 import { View, Image } from 'react-native';
-import Home from 'AwesomeProject/mentornetz_common_modules/Home.js';
-import FlexDimensionsBasics from 'AwesomeProject/FlexDimensionsBasics.js'
-
+// import Home from 'AwesomeProject/mentornetz_common_modules/Home.js';
+import TestView from 'AwesomeProject/mentornetz_common_modules/TestView.js'
+import LoginScreen from 'AwesomeProject/mentornetz_common_modules/LoginScreen.js'
 export default class MainContainer extends Component {
 
   render () {
@@ -12,13 +12,7 @@ export default class MainContainer extends Component {
         alignItems: 'center',
         justifyContent: 'space-around'
       }}>
-        <Image
-          source ={require('AwesomeProject/resources/backgrounds/checkerboard.png')}
-          style ={{flex: 1,
-            resizeMode: 'contain'
-          }}
-          >
-        </Image>
+        <LoginScreen/>
       </View>
     );
   }

@@ -5,7 +5,7 @@ export default class TopBar extends Component {
     return (
       <View style = {{
         flex: 1,
-        backgroundColor: 'green',
+        backgroundColor: '#06c1ca',
         height: 5,
         width: null,
         justifyContent: 'flex-start',//flex-start,center,flex-end,space-around,space-between
