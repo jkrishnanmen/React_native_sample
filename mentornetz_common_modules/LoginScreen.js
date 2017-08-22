@@ -4,8 +4,10 @@ import BackgroundHome from 'AwesomeProject/mentornetz_common_modules/common_comp
 import Logo from 'AwesomeProject/mentornetz_common_modules/common_components/Logo.js'
 import TextInputLogin from 'AwesomeProject/mentornetz_common_modules/common_components/TextInputLogin.js'
 import CustomButton from 'AwesomeProject/mentornetz_common_modules/common_components/CustomButton.js'
+
 export default class LoginScreen extends Component {
   render() {
+    console.log(this.constructor.name);
     return(
         <View style = {{
           flex: 1,
@@ -16,14 +18,15 @@ export default class LoginScreen extends Component {
         <View style ={{flex:2}}/>
         <Logo flex = "2"/>
         <TextInputLogin flex = "2"/>
+        <View style ={{flex:0.5}}/>
         <CustomButton
           flex = "1"
           name = "LOGIN"
           backgroundColor = "#06c1ca"/>
         <Text style ={{
           backgroundColor: 'rgba(0,0,0,0)',
-          flex:.9
         }}>Or</Text>
+        <View style ={{flex:0.5}}/>
         <CustomButton
           flex = "1"
           name = "FACEBOOK"

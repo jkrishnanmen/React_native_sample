@@ -16,6 +16,7 @@ export default class CustomButton extends Component {
   }
 
   render() {
+    console.log(this.constructor.name);
     return(
       <View
       flex = {this.props.flex}

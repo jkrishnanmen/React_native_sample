@@ -3,6 +3,7 @@ import { View, Image } from 'react-native';
 import BackgroundImage from './mentornetz_common_modules/BackgroundImage.js'
 export default class MentornetzLaunch extends Component {
   render(){
+    console.log(this.constructor.name);
     return(
       <BackgroundImage
         style={{

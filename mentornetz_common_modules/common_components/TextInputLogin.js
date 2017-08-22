@@ -11,6 +11,7 @@ export default class TextInputLogin extends Component {
   //   super(props)
   // }
   render() {
+    console.log(this.constructor.name);
     return (
       <View
        flex = {this.props.flex}

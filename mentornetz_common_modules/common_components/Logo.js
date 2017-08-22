@@ -3,6 +3,7 @@ import { View, Image } from 'react-native';
 
 export default class Logo extends Component {
   render() {
+    console.log(this.constructor.name);
     return(
       <Image
         source={require('AwesomeProject/resources/backgrounds/logomain.png')}

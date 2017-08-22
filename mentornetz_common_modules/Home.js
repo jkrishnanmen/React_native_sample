@@ -3,6 +3,7 @@ import { View, Image, TextInput } from 'react-native';
 
 export default class Home extends Component {
   render() {
+    console.log(this.constructor.name);
     return(
       <View style ={{backgroundColor: 'red'}}>
       <Image

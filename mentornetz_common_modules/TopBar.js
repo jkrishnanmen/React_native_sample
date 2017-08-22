@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import {View} from 'react-native';
+
 export default class TopBar extends Component {
   render () {
+    console.log(this.constructor.name);
     return (
       <View style = {{
         flex: 1,

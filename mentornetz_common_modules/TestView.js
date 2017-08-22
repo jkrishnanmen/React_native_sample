@@ -5,6 +5,7 @@ import FlexDimensionsBasics from 'AwesomeProject/FlexDimensionsBasics.js'
 export default class TestView extends Component {
 
   render () {
+    console.log(this.constructor.name);
     return(
       <View style = {{
         flex: 13,

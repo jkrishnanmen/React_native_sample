@@ -20,6 +20,7 @@ import MentornetzHome from './mentornetz_common_modules/MentornetzHome.js'
 import JustifyContentBasics from './JustifyContentBasics.js'
 import BottomBar from './mentornetz_common_modules/BottomBar.js'
 import LoginScreen from './mentornetz_common_modules/LoginScreen.js'
+import Movies from './Movies.js'
 
 export default class App extends React.Component {
 
@@ -55,6 +56,7 @@ export default class App extends React.Component {
   // }
 
   render() {
+    console.log(this.constructor.name);
     return (
       // <View style={styles.container}>
       <View style={{
@@ -65,7 +67,7 @@ export default class App extends React.Component {
         // alignItems: 'center'
       }}>
 
-        <MentornetzHome/>
+        <Movies/>
       </View>
 
       // <View style={{

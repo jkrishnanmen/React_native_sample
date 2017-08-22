@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
-import { View, Image, TextInput } from 'react-native';
+import { View, Image, TextInput, } from 'react-native';
 import BackgroundHome from 'AwesomeProject/mentornetz_common_modules/common_components/BackgroundHome.js';
 import BottomBar from 'AwesomeProject/mentornetz_common_modules/BottomBar.js';
 import MainContainer from 'AwesomeProject/mentornetz_common_modules/MainContainer.js';
 import TopBar from 'AwesomeProject/mentornetz_common_modules/TopBar.js'
 
 export default class MentornetzHome extends Component {
+
   constructor(props){
     super(props);
   }
   render() {
+    console.log(this.constructor.name);
     return(
+
       <BackgroundHome>
         <View style={{
           flex:1,
@@ -22,7 +25,6 @@ export default class MentornetzHome extends Component {
         <MainContainer/>
         <BottomBar/>
         </View>
-
       </BackgroundHome>
     );
   }

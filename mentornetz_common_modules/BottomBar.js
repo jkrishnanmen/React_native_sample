@@ -4,6 +4,7 @@ import { View , Image , StyleSheet } from 'react-native';
 
 export default class BottomBar extends Component {
   render() {
+    console.log(this.constructor.name);
     return (
       <View style ={{
         backgroundColor: 'gray',

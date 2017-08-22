@@ -6,6 +6,7 @@ import LoginScreen from 'AwesomeProject/mentornetz_common_modules/LoginScreen.js
 export default class MainContainer extends Component {
 
   render () {
+    console.log(this.constructor.name);
     return(
       <View style = {{
         flex: 13,
