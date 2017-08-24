@@ -13,7 +13,7 @@ export default class TestView extends Component {
         justifyContent: 'space-around'
       }}>
         <Image
-          source ={require('AwesomeProject/resources/backgrounds/checkerboard.png')}
+          source ={require('AwesomeProject/mentornetz_common_modules/resources/backgrounds/checkerboard.png')}
           style ={{flex: 1,
             resizeMode: 'contain'
           }}

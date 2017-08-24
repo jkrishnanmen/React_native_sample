@@ -6,7 +6,7 @@ export default class Logo extends Component {
     console.log(this.constructor.name);
     return(
       <Image
-        source={require('AwesomeProject/resources/backgrounds/logomain.png')}
+        source={require('AwesomeProject/mentornetz_common_modules/resources/backgrounds/logomain.png')}
         flex = {this.props.flex}
         style={{
                 resizeMode:'contain',

@@ -7,7 +7,7 @@ export default class BackgroundHome extends Component {
     return (
       <View style={{flex:1}}>
         <Image
-          source={require('AwesomeProject/resources/backgrounds/app_background1.png')}
+          source={require('AwesomeProject/mentornetz_common_modules/resources/backgrounds/app_background1.png')}
           style={{flex:1,
                   width:null,
                   height:null,

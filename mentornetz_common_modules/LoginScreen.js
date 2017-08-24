@@ -50,7 +50,6 @@ export default class LoginScreen extends Component {
             color: 'white'
           }}>Sign Up</Text>
         </View>
-
         <View
          style = {{flex:2}}/>
         </View>

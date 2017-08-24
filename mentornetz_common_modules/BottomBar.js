@@ -15,22 +15,22 @@ export default class BottomBar extends Component {
       }}>
         <View style={styles.greybar}>
           <Image
-            source={require('AwesomeProject/resources/buttons/ic_explore_blue_48dp.png')}
+            source={require('AwesomeProject/mentornetz_common_modules/resources/buttons/ic_explore_blue_48dp.png')}
             style ={styles.buttonSpec}/>
         </View>
         <View style={styles.greybar}>
         <Image
-          source={require('AwesomeProject/resources/buttons/ic_home_blue_48dp.png')}
+          source={require('AwesomeProject/mentornetz_common_modules/resources/buttons/ic_home_blue_48dp.png')}
           style ={styles.buttonSpec}/>
         </View>
         <View style={styles.greybar}>
         <Image
-          source={require('AwesomeProject/resources/buttons/ic_info_blue_48dp.png')}
+          source={require('AwesomeProject/mentornetz_common_modules/resources/buttons/ic_info_blue_48dp.png')}
           style ={styles.buttonSpec}/>
         </View>
         <View style={styles.greybar}>
         <Image
-          source={require('AwesomeProject/resources/buttons/ic_lock_open_blue_48dp.png')}
+          source={require('AwesomeProject/mentornetz_common_modules/resources/buttons/ic_lock_open_blue_48dp.png')}
           style ={styles.buttonSpec}/>
         </View>
       </View>
