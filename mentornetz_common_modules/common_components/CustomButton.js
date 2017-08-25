@@ -16,24 +16,41 @@ export default class CustomButton extends Component {
   }
 
   _onPressButton() {
-    return fetch('https://mentornetz.com/webservice/rest/server.php?wstoken=a8ae49cc747dd1e30239d9eeea1bb96a&moodlewsrestformat=json&wsfunction=local_wstemplate_user_login')
-    .then((response) => response.json())
-    .then((responseJson)) => {
-      let ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-      this.setState({
-        isLoading: false,
-        dataSource:ds.cloneWithRows(responseJson.movies),
-      },function() {
-      //   render(){
-      //     return(
-      //       <View>
-      //         <Text> responseJson[0].username</Text>
-      //       </View>
-      //   );
-      // }
-    });
+    // className = this.constructor.name;
+    console.log(this.constructor.name + " componentDidMount");
+    var myRequest = new Request('https://mentornetz.com/webservice/rest/server.php?moodlewsrestformat=json');
+    var myRequestFull = new Request('https://mentornetz.com/webservice/rest/server.php?moodlewsrestformat=json&wstoken=a8ae49cc747dd1e30239d9eeea1bb96a&moodlewsrestformat=json&wsfunction=local_wstemplate_user_login')
+    myRequest.method = 'POST';
+    var myMethod = myRequest.method;
+    console.log(this.constructor.name + "_onPressButton Method"+ myMethod);
+    return fetch(myRequest,{
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
 
-  })
+      },
+      body: JSON.stringify({
+        "wstoken" : "a8ae49cc747dd1e30239d9eeea1bb96a",
+        "moodlewsrestformat" : "json",
+        "wsfunction" : "local_wstemplate_user_login",
+      })
+    }
+  )
+      .then(function(response){
+        if(response.status == 200){
+          console.log(this.constructor.name + "_onPressButton response status success");
+        }
+        else console.log(this.constructor.name + " _onPressButton response status fail");
+      }
+    )
+      // .then((response) => response.json())
+
+      .then(function(data)){
+
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   }
 
   render() {
