@@ -41,13 +41,11 @@ export default class CustomButton extends Component {
           console.log(this.constructor.name + "_onPressButton response status success");
         }
         else console.log(this.constructor.name + " _onPressButton response status fail");
-      }
-    )
-      // .then((response) => response.json())
-
-      .then(function(data)){
-
       })
+
+      /*.then(function(data)){
+        console.error(error);
+      })*/
       .catch((error) => {
         console.error(error);
       });
